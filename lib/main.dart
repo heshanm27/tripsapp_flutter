@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tripsapp/pages/welcome_page.dart';
+import 'package:tripsapp/pages/navpages/main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
 
           primarySwatch: Colors.blue,
         ),
-        home: WelomePage()
+        home: MainPage()
     );
   }
 }
