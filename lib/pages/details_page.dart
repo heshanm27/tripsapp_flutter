@@ -4,6 +4,7 @@ import 'package:tripsapp/misc/colors.dart';
 import 'package:tripsapp/widgets/app_button.dart';
 import 'package:tripsapp/widgets/app_large_text.dart';
 import 'package:tripsapp/widgets/app_text.dart';
+import 'package:tripsapp/widgets/responsive_button.dart';
 
 class DetailsPage extends StatefulWidget {
   const DetailsPage({Key? key}) : super(key: key);
@@ -55,27 +56,6 @@ class _DetailsPageState extends State<DetailsPage> {
                     ),
                   ) ,
                 )),
-            // Positioned(
-            //     left: 20,
-            //     top: 30,
-            //     right: 20,
-            //     child: Container(
-            //       width: MediaQuery.of(context).size.width,
-            //       child: Row(
-            //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //         children: [
-            //           IconButton(
-            //             onPressed: () {},
-            //             icon: Icon(Icons.menu),
-            //             color: Colors.white,
-            //           ),
-            //           IconButton(
-            //               onPressed: () {},
-            //               color: Colors.white,
-            //               icon: Icon(Icons.more_vert))
-            //         ],
-            //       ),
-            //     )),
             Positioned(
                 top: 300,
                 child: Container(
@@ -187,7 +167,17 @@ class _DetailsPageState extends State<DetailsPage> {
                     ],
                   ),
                 )),
-
+            Positioned(
+                bottom: 20,
+                left: 20,
+                right: 30,
+                child: Row(
+              children: [
+                      AppButton(color: Colors.black, backgroundColor: AppColors.buttonBackground, borderColor: AppColors.buttonBackground, size: 60,isIcon:true,icon: Icons.favorite_border,),
+                     SizedBox(width: 20),
+                      ResponsiveButton(text: "Book Trip Now",isResponsive: true,)
+              ],
+            ))
           ],
         ),
       ),

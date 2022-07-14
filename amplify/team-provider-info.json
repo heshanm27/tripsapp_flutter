@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tripsapp-dev-193304-authRole",
+      "UnauthRoleArn": "arn:aws:iam::547375733754:role/amplify-tripsapp-dev-193304-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::547375733754:role/amplify-tripsapp-dev-193304-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-tripsapp-dev-193304-deployment",
+      "UnauthRoleName": "amplify-tripsapp-dev-193304-unauthRole",
+      "StackName": "amplify-tripsapp-dev-193304",
+      "StackId": "arn:aws:cloudformation:ap-south-1:547375733754:stack/amplify-tripsapp-dev-193304/ad5445d0-037d-11ed-ab11-0659359d8cfc",
+      "AmplifyAppId": "d25u08w82cb5ic"
+    },
+    "categories": {
+      "auth": {
+        "tripsapp62bb9026": {},
+        "TripsApp": {}
+      }
+    }
+  }
+}
